@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+</head>
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav mr-auto">
+
+                    </ul>
+
+                    <!-- Right Side Of Navbar -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            @if (Route::has('register'))
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                </li>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="py-4">
+                @yield('content')
+
+        </main>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+p:before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2.5px;
+    background: #eba61e;
+    top:50%;
+    left:-170px;
+    position: absolute;
+  }
+  p:after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2.5px;
+    background: #eba61e;
+    right: -170px;
+    top: 50%;
+    position: absolute;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Devices  600px and below*/
+@media only screen and (max-width: 600px) {
+    #header-image{
+        background-image: url("/storage/images/landing4.jpg");
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height:100vh;
+        width: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #header-image h1{
+        text-transform: uppercase;
+        color:white;
+        font-weight: bold;
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #header-image p{
+        color:white;
+        font-size:1.8rem;
+        max-width: 600px;
+        position: relative;
+    }
+    p:before {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2.5px;
+        background: #eba61e;
+        top:50%;
+        left:-70px;
+        position: absolute;
+      }
+      p:after {
+        content: "";
+        display: block;
+        width: 80px;
+        height: 2.5px;
+        background: #eba61e;
+        right: -70px;
+        top: 50%;
+        position: absolute;
+      }
+}
+
+
+
+
+
+
+/*  Devices 600px and below (Mobile Devices)*/
+@media only screen and (max-width: 600px) {
+    #header-image{
+        height:60vh;
+    }
+
+    #header-image h1{
+    font-size: 8vw;
+    }
+    #header-image p{
+        font-size:6vw;
+    }
+}
+
+/* For I-pad Pro */
+@media only screen and (min-width: 1024px) and (max-height: 1366px)
+    and (-webkit-min-device-pixel-ratio: 1.5) and (hover: none) {
+        #header-image{
+            height:60vh !important;
+        }
+
+        #header-image h1{
+        font-size: 6vw !important;
+        }
+        #header-image p{
+            font-size:6vw !important;
+        }
+}
+
+/*  Devices greater than 600px */
+@media only screen and (min-width: 600px) {
+    .nav-item{
+        margin-left:30px !important;
+    }
+    .nav-link{
+        margin-top:10px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+<div id ='swimming-pool-section mo'>
+    <div class="row mo">
+        <!--image 1 start--->
+        <div class="col-md-4 col-sm-12 mo">
+            <!--<div class='about-div'></div>--->
+            <img src="storage/images/king-size-bed.jpg" alt='hotel lobby' class='img-fluid about-image mo'>
+            <!--<div class='about-button'>7 Years of Service Experience</div>-->
+        </div>
+        <!--image 1 end--->
+
+        <!--image 2 start--->
+        <div class="col-md-4 col-sm-12 mo">
+            <!--<div class='about-div'></div>--->
+            <img src="storage/images/queen-size.jpg" alt='hotel lobby' class='img-fluid about-image mo'>
+            <!--<div class='about-button'>7 Years of Service Experience</div>-->
+        </div>
+        <!--image 2 end--->
+
+        <!--image 3 start--->
+        <div class="col-md-4 col-sm-12 mo">
+            <!--<div class='about-div'></div>--->
+            <img src="storage/images/suite.jpg" alt='hotel lobby' class='img-fluid about-image'>
+            <!--<div class='about-button'>7 Years of Service Experience</div>-->
+        </div>
+        <!--image 3 end--->
+
+    </div>
+</div>

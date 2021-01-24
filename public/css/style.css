@@ -1,0 +1,729 @@
+/* Header */
+.book-online{
+    background: #DCA73A;
+    color:white;
+    font-size:1.3rem;
+    height:4rem;
+    width:10rem;
+    border-radius:5px;
+    font-weight: bold;
+    padding-top:10px;
+}
+.book-online:hover{
+    background: #f0a716;
+    color:white;
+}
+
+#header-image{
+    display:flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+#header-image h1{
+    text-transform: uppercase;
+    color:white;
+    font-weight: bold;
+    font-size: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 15px #000;
+}
+#header-image p{
+    color:white;
+    font-size:3vw;
+    max-width: 600px;
+    position: relative;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+  }
+
+.carousel-indicators{
+    margin:100px auto;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+
+#booking{
+      position: relative;
+      border-radius:5px;
+      background-color: white;
+      width:80%;
+      margin:-100px auto;
+      padding:30px;
+      z-index: 1000;
+  }
+
+.booking-body{
+      padding:10px;
+  }
+
+.booking-sub-header{
+      font-weight:bold;
+      font-size:17px;
+  }
+  ::placeholder {
+    font-size: 16px;
+  }
+.booking-date-select{
+    border: 1px solid #DCA73A;
+    padding: 10px;
+    border-radius: 5px;
+    width: 60%;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#booking-button{
+    color: white;
+    background: #DCA73A;
+    border: 1px solid #DCA73A;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+#booking-button:hover{
+    background: #f0a716;
+}
+select:hover, .date:hover {
+    border: 1px solid rgba(62, 131, 221, 0.918);
+}
+option:hover{
+    background: #f0a716 !important;
+}
+
+#about-section{
+    margin:150px 20px 150px 10px;
+}
+/*.about-div{
+    position: relative;
+    background: #dca73a;
+    border-radius: 5px;
+    width: 400px;
+    height:370px;
+    margin-left:150px;
+    margin-top:-50px;
+}*/
+
+.about-button{
+    position: absolute;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.925);
+    color:white;
+    width: 400px;
+    height:120px;
+    font-size:2vw;
+    font-weight: bold;
+    margin-left:100px;
+    margin-top:-70px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 10;
+    z-index: 2000;
+}
+
+.about h3{
+    color: #dca73a;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.about #learn-more-button{
+    text-decoration: none ;
+    color: white;
+    background: #DCA73A;
+    border: 1px solid #DCA73A;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.about #learn-more-button:hover{
+    background: #f0a716;
+}
+#rooms{
+    margin-top:-250px;
+}
+
+#rooms h1{
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+}
+.room-header{
+    margin:0 15px;
+}
+.room-border{
+    border-radius: 10px;
+    background: #fff;
+}
+.room-margin{
+    margin-bottom: 40px !important;
+}
+.room-border a{
+    text-decoration: none;
+    margin-bottom: 55px;
+    color:rgba(0, 0, 0, 0.63);
+}
+.room-border a:hover{
+   color:#dca73a
+}
+
+.room-border img{
+    border-radius: 5px;
+    transition: transform 2s;
+    /*height:700px;*/
+}
+.room-border h2{
+    text-decoration: none;
+    margin:45px 0 0 20px;
+}
+.room-border:hover{
+    color: #dca73a;
+}
+.room-border p{
+    margin:15px 0 20px 20px;
+    font-weight: bold;
+    font-size:20px;
+}
+.room-border span{
+   color: gray;
+}
+#view-more{
+    width:200px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+#view-more a{
+    text-decoration: none;
+    color: white;
+    background: #DCA73A;
+    border: 1px solid #DCA73A;
+    padding:20px 20px;
+    border-radius: 5px;
+    width: 500px;
+    height: 80px;
+    font-size: 20px;
+}
+
+#view-more a:hover{
+    background: #f0a716;
+}
+.room-boder img:hover{
+    transform: scale(1.5);
+}
+/*.zoom{
+    padding: 50px;
+    background: green;
+    transition: transform 0.2s;
+    width:200px;
+    height:200px;
+    margin:0 auto;
+}
+.zoom:hover{
+    transform: scale(1.5);
+}*/
+
+
+#dining-section{
+    margin:150px 20px 150px 10px;
+}
+.dining h2 {
+    color: #dca73a;
+}
+.dining h3{
+    color:black;
+}
+.dining p{
+    color:rgb(124, 120, 120);
+}
+.dining #learn-more-button-dining{
+    text-decoration: none ;
+    color: #dca73a;
+    background: transparent;
+    border: 1px solid #DCA73A;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.dining #learn-more-button-dining:hover{
+    background: #f0a716;
+    color:white;
+}
+
+#swimming-pool-section{
+    margin:-250px 20px 140px 10px;
+}
+.swimming h2 {
+    color: #dca73a;
+}
+.swimming h3{
+    color:black;
+}
+.swimming p{
+    color:rgb(124, 120, 120);
+}
+.swimming #learn-more-button-swimming{
+    text-decoration: none ;
+    color: #dca73a;
+    background: transparent;
+    border: 1px solid #DCA73A;
+    padding: 10px;
+    border-radius: 5px;
+    width: 40%;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+}
+.swimming #learn-more-button-swimming:hover{
+    background: #f0a716;
+    color:white;
+}
+
+
+#footer{
+    margin-top:-327px;
+    background-color: rgb(12, 12, 26);
+    color:gray;
+    padding: 90px 60px 90px 60px;
+}
+#dumia a{
+    text-decoration: none;
+    color:#DCA73A
+}
+#socials{
+    margin-bottom: 15px;
+}
+.fa-facebook-f, .fa-twitter,.fa-instagram,.fa-whatsapp{
+    font-size:20px;
+    padding: 10px 10px 10px 0px;
+}
+.fa-skype,.fa-phone-alt,.fa-envelope,.fa-map-marker-alt{
+    font-size:15px;
+}
+#copywright{
+    font-size:16px;
+}
+.footer-header{
+    color:white;
+    font-size:18px;
+    margin-bottom: 25px;
+}
+.footer-p > p > a{
+    text-decoration: none;
+    color:gray;
+    font-size: 12px;
+}
+.footer-p > p > a:hover{
+    color:#f0a716;
+}
+input[type='text']{
+    width:100%;
+    height:40px;
+    padding:15px;
+}
+input[type='text']::placeholder{
+    color:lightgray;
+}
+#form-head{
+    display:flex;
+}
+.fa-paper-plane{
+
+    outline: none;
+    color:#dca73a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  Mobile Devices (SAMSUNG GALAXY FOLD)*/
+@media only screen and (max-width: 319px) {
+
+    #header-image h1{
+    font-size: 8.2vw;
+    }
+    #header-image p{
+        font-size:7vw;
+    }
+    .carousel-indicators{
+        margin:20px auto;
+    }
+    #booking{
+        margin:-20px auto;
+    }
+    .booking-sub-header{
+        font-weight:bold;
+        font-size:16px;
+    }
+    .booking-date-select{
+        width: 90%;
+    }
+    #booking-button{
+        width: 90%;
+        font-size: 16px;
+    }
+    .about{
+        margin-top:45px;
+    }
+    .about h3{
+        font-size: 24px;
+        padding:5px;
+    }
+    .about h2{
+        font-size: 25px;
+        padding:5px;
+    }
+    .about p{
+        padding:5px;
+    }
+    .about #learn-more-button{
+        margin-left:5px;
+        margin-top: -5px;
+        width: 60%;
+        height: 50px;
+    }
+    #rooms{
+        margin-top:-50px;
+    }
+    #rooms h1{
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    .room-border p{
+        font-size:13px;
+        text-align: left;
+    }
+    #dining-section{
+        margin:70px 20px 70px 10px;
+    }
+    .dining h2 {
+        color: gray;
+        font-size:28px;
+        font-weight: bold;
+        margin-top:10px;
+        padding-left:20px;
+    }
+    .dining h3{
+        color:#dca73a;
+        margin-top:25px;
+        text-transform: uppercase;
+        font-size:16px;
+        font-weight: bold;
+        padding:20px;
+    }
+    .dining p{
+        color:rgb(124, 120, 120);
+        font-size:14px;
+        padding:20px;
+    }
+    .dining #learn-more-button-dining{
+        text-decoration: none ;
+        color: #dca73a;
+        background: transparent;
+        border: 1px solid #DCA73A;
+        padding: 10px;
+        border-radius: 5px;
+        width: 60%;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 16px;
+        margin-top: 50px;
+        margin-left:20px;
+    }
+    .dining #learn-more-button-dining:hover{
+        background: #f0a716;
+        color:white;
+    }
+
+    #swimming-pool-section{
+        margin:-100px 20px 140px 10px;
+    }
+    .swimming h2 {
+        color: gray;
+        font-size:26px;
+        font-weight: bold;
+        margin-top:7px;
+        padding-left:20px;
+    }
+    .swimming h3{
+        color:#dca73a;
+        margin-top:75px;
+        text-transform: uppercase;
+        font-size:16px;
+        font-weight: bold;
+        padding:20px;
+    }
+    .swimming p{
+        font-size:14px;
+        padding:20px;
+    }
+    .swimming #learn-more-button-swimming{
+        margin-left: 20px;
+    }
+    #swimming-img-div{
+        margin-top:50px;
+    }
+
+    #footer{
+        margin-top:-127px;
+        padding: 40px 20px 40px 20px;
+    }
+    .footer-p > p > a{
+        font-size: 11px;
+    }
+    .footer-header{
+        font-size:16px;
+        margin-top:10px;
+    }
+}
+
+/*  Mobile Devices */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #header-image h1{
+    font-size: 8vw;
+    }
+    #header-image p{
+        font-size:6vw;
+    }
+    .carousel-indicators{
+        margin:40px auto;
+    }
+    #booking{
+        margin:-40px auto;
+    }
+    .booking-sub-header{
+        font-weight:bold;
+        font-size:20px;
+    }
+    .booking-date-select{
+        width: 90%;
+    }
+    #booking-button{
+        width: 90%;
+        font-size: 18px;
+    }
+    .about{
+        margin-top:40px;
+    }
+    .about h3{
+        font-size: 27px;
+        padding:10px;
+    }
+    .about h2{
+        font-size: 30px;
+        padding:10px;
+    }
+    .about p{
+        padding:10px;
+    }
+    .about #learn-more-button{
+        margin-left:10px;
+        margin-top: -10px;
+    }
+    #rooms{
+        margin-top:-80px;
+    }
+    #rooms h1{
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+
+    .dining h2 {
+        color: gray;
+        font-size:28px;
+        font-weight: bold;
+        margin-top:10px;
+        padding-left:20px;
+    }
+    .dining h3{
+        color:#dca73a;
+        margin-top:25px;
+        text-transform: uppercase;
+        font-size:16px;
+        font-weight: bold;
+        padding:20px;
+    }
+    .dining p{
+        color:rgb(124, 120, 120);
+        font-size:14px;
+        padding:20px;
+    }
+    .dining #learn-more-button-dining{
+        text-decoration: none ;
+        color: #dca73a;
+        background: transparent;
+        border: 1px solid #DCA73A;
+        padding: 10px;
+        border-radius: 5px;
+        width: 60%;
+        height: 60px;
+        margin-top: 20px;
+        font-size: 16px;
+        margin-top: 50px;
+        margin-left:20px;
+    }
+    .dining #learn-more-button-dining:hover{
+        background: #f0a716;
+        color:white;
+    }
+
+    #swimming-pool-section{
+        margin:-100px 20px 140px 10px;
+    }
+    .swimming h2 {
+        color: gray;
+        font-size:28px;
+        font-weight: bold;
+        margin-top:10px;
+        padding-left:20px;
+    }
+    .swimming h3{
+        color:#dca73a;
+        margin-top:25px;
+        text-transform: uppercase;
+        font-size:16px;
+        font-weight: bold;
+        padding:20px;
+    }
+    .swimming p{
+        font-size:14px;
+        padding:20px;
+    }
+    .swimming #learn-more-button-swimming{
+        margin-left: 20px;
+    }
+    #swimming-img-div{
+        margin-top:50px;
+    }
+
+    #footer{
+        margin-top:-127px;
+        padding: 40px 20px 40px 20px;
+    }
+    .footer-p > p > a{
+        font-size: 14px;
+    }
+    .footer-header{
+        font-size:20px;
+        margin-top:10px;
+    }
+
+}
+
+/*  I-Pad's and Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .nav-item{
+        margin-left:30px !important;
+    }
+    .nav-link{
+        margin-top:10px !important;
+    }
+    #header-image h1{
+    font-size: 6vw !important;
+    }
+    #header-image p{
+        font-size:6vw !important;
+    }
+    .booking-sub-header{
+        font-weight:bold;
+        font-size:20px;
+    }
+    .booking-date-select{
+        width: 90%;
+    }
+    #booking-button{
+        width: 90%;
+        font-size: 18px;
+    }
+}
+
+/*  Small Screens, Laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-item{
+        margin-left:30px !important;
+    }
+    .nav-link{
+        margin-top:10px !important;
+    }
+}
+
+/*  Desktops, Large Screens */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    .nav-item{
+        margin-left:30px !important;
+    }
+    .nav-link{
+        margin-top:10px !important;
+    }
+
+    .about-image{
+        height: 72%;
+    }
+}
+
+/*  Extra Large Screens, TV */
+@media only screen and (min-width: 1201px) {
+    .nav-item{
+        margin-left:30px !important;
+    }
+    .nav-link{
+        margin-top:10px !important;
+    }
+
+    .about-image{
+        height: 72%;
+    }
+}
+
+
+
